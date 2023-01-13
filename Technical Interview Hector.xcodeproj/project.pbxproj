@@ -9,21 +9,49 @@
 /* Begin PBXBuildFile section */
 		C478D4A429705CC4004C15B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478D4A329705CC4004C15B4 /* AppDelegate.swift */; };
 		C478D4A629705CC4004C15B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478D4A529705CC4004C15B4 /* SceneDelegate.swift */; };
-		C478D4A829705CC4004C15B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478D4A729705CC4004C15B4 /* ViewController.swift */; };
+		C478D4A829705CC4004C15B4 /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478D4A729705CC4004C15B4 /* TopicsViewController.swift */; };
 		C478D4AB29705CC4004C15B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C478D4A929705CC4004C15B4 /* Main.storyboard */; };
 		C478D4AD29705CC4004C15B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C478D4AC29705CC4004C15B4 /* Assets.xcassets */; };
 		C478D4B029705CC4004C15B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C478D4AE29705CC4004C15B4 /* LaunchScreen.storyboard */; };
+		C478D4BA297061AA004C15B4 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C478D4B9297061AA004C15B4 /* SF-Pro-Display-Bold.otf */; };
+		C478D4BD2970632E004C15B4 /* MaisonNeue-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C478D4BB2970632E004C15B4 /* MaisonNeue-Book.otf */; };
+		C478D4BE2970632E004C15B4 /* MaisonNeue-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C478D4BC2970632E004C15B4 /* MaisonNeue-Bold.otf */; };
+		C4ABBE532970705300452E27 /* SubtopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE522970705300452E27 /* SubtopicsViewController.swift */; };
+		C4ABBE58297070CA00452E27 /* TopicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE57297070CA00452E27 /* TopicsCollectionViewCell.swift */; };
+		C4ABBE5A297070D800452E27 /* SubtopicsCollectionViewMeditationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE59297070D800452E27 /* SubtopicsCollectionViewMeditationCell.swift */; };
+		C4ABBE5C2970711600452E27 /* SubtopicsCollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE5B2970711600452E27 /* SubtopicsCollectionHeaderReusableView.swift */; };
+		C4ABBE5E2970715C00452E27 /* SubtopicsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4ABBE5D2970715C00452E27 /* SubtopicsStoryboard.storyboard */; };
+		C4ABBE602970716800452E27 /* TopicsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4ABBE5F2970716800452E27 /* TopicsStoryboard.storyboard */; };
+		C4ABBE62297074E800452E27 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE61297074E800452E27 /* NetworkManager.swift */; };
+		C4ABBE6529707FFD00452E27 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE6429707FFD00452E27 /* Topic.swift */; };
+		C4ABBE672970800600452E27 /* Subtopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE662970800600452E27 /* Subtopic.swift */; };
+		C4ABBE692970801000452E27 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE682970801000452E27 /* Meditation.swift */; };
+		C4ABBE6B29708D3400452E27 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABBE6A29708D3400452E27 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C478D4A029705CC4004C15B4 /* Technical Interview Hector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Technical Interview Hector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C478D4A329705CC4004C15B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C478D4A529705CC4004C15B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C478D4A729705CC4004C15B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C478D4A729705CC4004C15B4 /* TopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 		C478D4AA29705CC4004C15B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C478D4AC29705CC4004C15B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C478D4AF29705CC4004C15B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C478D4B129705CC4004C15B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C478D4B9297061AA004C15B4 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		C478D4BB2970632E004C15B4 /* MaisonNeue-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaisonNeue-Book.otf"; sourceTree = "<group>"; };
+		C478D4BC2970632E004C15B4 /* MaisonNeue-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaisonNeue-Bold.otf"; sourceTree = "<group>"; };
+		C4ABBE522970705300452E27 /* SubtopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicsViewController.swift; sourceTree = "<group>"; };
+		C4ABBE57297070CA00452E27 /* TopicsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4ABBE59297070D800452E27 /* SubtopicsCollectionViewMeditationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicsCollectionViewMeditationCell.swift; sourceTree = "<group>"; };
+		C4ABBE5B2970711600452E27 /* SubtopicsCollectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtopicsCollectionHeaderReusableView.swift; sourceTree = "<group>"; };
+		C4ABBE5D2970715C00452E27 /* SubtopicsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubtopicsStoryboard.storyboard; sourceTree = "<group>"; };
+		C4ABBE5F2970716800452E27 /* TopicsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopicsStoryboard.storyboard; sourceTree = "<group>"; };
+		C4ABBE61297074E800452E27 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C4ABBE6429707FFD00452E27 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		C4ABBE662970800600452E27 /* Subtopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtopic.swift; sourceTree = "<group>"; };
+		C4ABBE682970801000452E27 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		C4ABBE6A29708D3400452E27 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,77 @@
 		C478D4A229705CC4004C15B4 /* Technical Interview Hector */ = {
 			isa = PBXGroup;
 			children = (
+				C478D4B729706142004C15B4 /* Resources */,
 				C478D4A329705CC4004C15B4 /* AppDelegate.swift */,
 				C478D4A529705CC4004C15B4 /* SceneDelegate.swift */,
-				C478D4A729705CC4004C15B4 /* ViewController.swift */,
-				C478D4A929705CC4004C15B4 /* Main.storyboard */,
+				C4ABBE542970705F00452E27 /* Managers */,
+				C4ABBE632970760E00452E27 /* Models */,
+				C4ABBE562970708200452E27 /* ViewControllers */,
+				C4ABBE552970707900452E27 /* Views */,
 				C478D4AC29705CC4004C15B4 /* Assets.xcassets */,
 				C478D4AE29705CC4004C15B4 /* LaunchScreen.storyboard */,
 				C478D4B129705CC4004C15B4 /* Info.plist */,
 			);
 			path = "Technical Interview Hector";
+			sourceTree = "<group>";
+		};
+		C478D4B729706142004C15B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C478D4B82970614C004C15B4 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C478D4B82970614C004C15B4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C478D4B9297061AA004C15B4 /* SF-Pro-Display-Bold.otf */,
+				C478D4BC2970632E004C15B4 /* MaisonNeue-Bold.otf */,
+				C478D4BB2970632E004C15B4 /* MaisonNeue-Book.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C4ABBE542970705F00452E27 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C4ABBE61297074E800452E27 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C4ABBE552970707900452E27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4ABBE57297070CA00452E27 /* TopicsCollectionViewCell.swift */,
+				C4ABBE59297070D800452E27 /* SubtopicsCollectionViewMeditationCell.swift */,
+				C4ABBE5B2970711600452E27 /* SubtopicsCollectionHeaderReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4ABBE562970708200452E27 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C478D4A929705CC4004C15B4 /* Main.storyboard */,
+				C4ABBE6A29708D3400452E27 /* LoadingViewController.swift */,
+				C4ABBE5F2970716800452E27 /* TopicsStoryboard.storyboard */,
+				C478D4A729705CC4004C15B4 /* TopicsViewController.swift */,
+				C4ABBE5D2970715C00452E27 /* SubtopicsStoryboard.storyboard */,
+				C4ABBE522970705300452E27 /* SubtopicsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4ABBE632970760E00452E27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4ABBE6429707FFD00452E27 /* Topic.swift */,
+				C4ABBE662970800600452E27 /* Subtopic.swift */,
+				C4ABBE682970801000452E27 /* Meditation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C478D4B029705CC4004C15B4 /* LaunchScreen.storyboard in Resources */,
+				C478D4BD2970632E004C15B4 /* MaisonNeue-Book.otf in Resources */,
 				C478D4AD29705CC4004C15B4 /* Assets.xcassets in Resources */,
+				C478D4BA297061AA004C15B4 /* SF-Pro-Display-Bold.otf in Resources */,
+				C4ABBE5E2970715C00452E27 /* SubtopicsStoryboard.storyboard in Resources */,
+				C4ABBE602970716800452E27 /* TopicsStoryboard.storyboard in Resources */,
+				C478D4BE2970632E004C15B4 /* MaisonNeue-Bold.otf in Resources */,
 				C478D4AB29705CC4004C15B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C478D4A829705CC4004C15B4 /* ViewController.swift in Sources */,
+				C478D4A829705CC4004C15B4 /* TopicsViewController.swift in Sources */,
+				C4ABBE692970801000452E27 /* Meditation.swift in Sources */,
+				C4ABBE6529707FFD00452E27 /* Topic.swift in Sources */,
+				C4ABBE672970800600452E27 /* Subtopic.swift in Sources */,
+				C4ABBE5A297070D800452E27 /* SubtopicsCollectionViewMeditationCell.swift in Sources */,
+				C4ABBE58297070CA00452E27 /* TopicsCollectionViewCell.swift in Sources */,
+				C4ABBE5C2970711600452E27 /* SubtopicsCollectionHeaderReusableView.swift in Sources */,
+				C4ABBE62297074E800452E27 /* NetworkManager.swift in Sources */,
 				C478D4A429705CC4004C15B4 /* AppDelegate.swift in Sources */,
 				C478D4A629705CC4004C15B4 /* SceneDelegate.swift in Sources */,
+				C4ABBE532970705300452E27 /* SubtopicsViewController.swift in Sources */,
+				C4ABBE6B29708D3400452E27 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +395,7 @@
 				INFOPLIST_FILE = "Technical Interview Hector/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TopicsStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +422,7 @@
 				INFOPLIST_FILE = "Technical Interview Hector/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TopicsStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

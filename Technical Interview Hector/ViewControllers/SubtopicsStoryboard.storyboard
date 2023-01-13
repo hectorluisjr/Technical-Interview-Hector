@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ovj-gc-Fjl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Subtopics View Controller-->
+        <scene sceneID="2Es-ZH-51Q">
+            <objects>
+                <viewController id="ovj-gc-Fjl" customClass="SubtopicsViewController" customModule="Technical_Interview_Hector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hOp-wZ-Bq0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWC-bT-lIX">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI3-CI-Hcr">
+                                        <rect key="frame" x="15.999999999999993" y="92.333333333333329" width="98.333333333333314" height="39.666666666666671"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Topics">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.1333333333" green="0.1333333333" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="34" name="SFProDisplay-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc5-K0-yao">
+                                        <rect key="frame" x="5" y="40" width="48" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Icon Back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="ovj-gc-Fjl" eventType="touchUpInside" id="xmc-VV-CF3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QI3-CI-Hcr" firstAttribute="leading" secondItem="sWC-bT-lIX" secondAttribute="leading" constant="16" id="2KV-tw-7KM"/>
+                                    <constraint firstItem="Sc5-K0-yao" firstAttribute="top" secondItem="sWC-bT-lIX" secondAttribute="top" constant="40" id="UHt-6Y-eu8"/>
+                                    <constraint firstAttribute="bottom" secondItem="QI3-CI-Hcr" secondAttribute="bottom" constant="8" id="Z33-6i-A0a"/>
+                                    <constraint firstAttribute="height" constant="140" id="cI2-be-0hZ"/>
+                                    <constraint firstItem="Sc5-K0-yao" firstAttribute="leading" secondItem="sWC-bT-lIX" secondAttribute="leading" constant="5" id="oHl-b4-pLT"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rqu-hm-8eQ">
+                                <rect key="frame" x="0.0" y="140" width="393" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" sectionInsetReference="safeArea" id="eQH-4f-csv">
+                                    <size key="itemSize" width="393" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="70"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubtopicsCollectionViewMeditationCell" id="3T4-0H-KPk" customClass="SubtopicsCollectionViewMeditationCell" customModule="Technical_Interview_Hector" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="393" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XZK-oi-uSe">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHB-to-h69">
+                                                    <rect key="frame" x="15" y="0.0" width="363" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="4IB-jb-QU3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="50"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LdQ-of-axx">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="50" id="2Wt-Jg-s4Z"/>
+                                                                        <constraint firstAttribute="height" constant="50" id="f65-zK-Jgm"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmw-8g-nHY">
+                                                                    <rect key="frame" x="63" y="0.0" width="300" height="50"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="xHA-UZ-5LZ">
+                                                                            <rect key="frame" x="0.0" y="10" width="111" height="40"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jR2-Lv-Ccy">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="111" height="22"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="22" id="TIm-px-xxR"/>
+                                                                                    </constraints>
+                                                                                    <attributedString key="attributedText">
+                                                                                        <fragment content="Stress ">
+                                                                                            <attributes>
+                                                                                                <color key="NSColor" red="0.1333333333" green="0.1333333333" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                                <font key="NSFont" size="15" name="MaisonNeueTRIAL-Bold"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                        <fragment content="&amp;">
+                                                                                            <attributes>
+                                                                                                <color key="NSColor" red="0.1333333333" green="0.1333333333" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                                                                <font key="NSOriginalFont" size="15" name="MaisonNeueTRIAL-Bold"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                        <fragment content=" Anxiety">
+                                                                                            <attributes>
+                                                                                                <color key="NSColor" red="0.1333333333" green="0.1333333333" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                                <font key="NSFont" size="15" name="MaisonNeueTRIAL-Bold"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                    </attributedString>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ii6-8N-Nun">
+                                                                                    <rect key="frame" x="0.0" y="22" width="78.333333333333329" height="18"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="18" id="Wzk-nI-zVq"/>
+                                                                                    </constraints>
+                                                                                    <attributedString key="attributedText">
+                                                                                        <fragment content="38">
+                                                                                            <attributes>
+                                                                                                <color key="NSColor" red="0.6705882353" green="0.6705882353" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                                <font key="NSFont" size="12" name=".SFNS-Regular"/>
+                                                                                                <font key="NSOriginalFont" size="12" name="MaisonNeueTRIAL-Book"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                        <fragment content=" Meditations">
+                                                                                            <attributes>
+                                                                                                <color key="NSColor" red="0.6705882353" green="0.6705882353" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                                <font key="NSFont" size="12" name="MaisonNeueTRIAL-Book"/>
+                                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                            </attributes>
+                                                                                        </fragment>
+                                                                                    </attributedString>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="xHA-UZ-5LZ" firstAttribute="leading" secondItem="Vmw-8g-nHY" secondAttribute="leading" id="8pT-iN-go9"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="xHA-UZ-5LZ" secondAttribute="bottom" id="X95-8J-c3v"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Vmw-8g-nHY" firstAttribute="height" secondItem="4IB-jb-QU3" secondAttribute="height" id="nya-JZ-14Y"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="4IB-jb-QU3" firstAttribute="width" secondItem="VHB-to-h69" secondAttribute="width" id="8tb-qu-UJc"/>
+                                                        <constraint firstItem="4IB-jb-QU3" firstAttribute="centerX" secondItem="VHB-to-h69" secondAttribute="centerX" id="Wju-3u-QfJ"/>
+                                                        <constraint firstItem="4IB-jb-QU3" firstAttribute="centerY" secondItem="VHB-to-h69" secondAttribute="centerY" id="eDw-Eu-slC"/>
+                                                        <constraint firstItem="4IB-jb-QU3" firstAttribute="height" secondItem="VHB-to-h69" secondAttribute="height" id="vxr-KU-U1r"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                            <color key="value" white="0.0" alpha="0.099337748340000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VHB-to-h69" firstAttribute="centerX" secondItem="XZK-oi-uSe" secondAttribute="centerX" id="CeE-ju-Cfx"/>
+                                                <constraint firstItem="VHB-to-h69" firstAttribute="height" secondItem="XZK-oi-uSe" secondAttribute="height" id="DD8-iG-KGh"/>
+                                                <constraint firstItem="VHB-to-h69" firstAttribute="centerY" secondItem="XZK-oi-uSe" secondAttribute="centerY" id="gzV-LW-Kqf"/>
+                                                <constraint firstItem="VHB-to-h69" firstAttribute="width" secondItem="XZK-oi-uSe" secondAttribute="width" constant="-30" id="mgP-sZ-K6p"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="393" height="50"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="LdQ-of-axx" id="DS7-AM-rX6"/>
+                                            <outlet property="teacherLabel" destination="ii6-8N-Nun" id="c1G-iL-zmZ"/>
+                                            <outlet property="titleLabel" destination="jR2-Lv-Ccy" id="9T7-y5-pSL"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SubtopicsCollectionHeaderReusableView" id="luj-xQ-jVp" customClass="SubtopicsCollectionHeaderReusableView" customModule="Technical_Interview_Hector" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avX-Hh-ltf">
+                                            <rect key="frame" x="15" y="23.333333333333336" width="49" height="23.333333333333336"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Label">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.1333333333" green="0.1333333333" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="20" name="MaisonNeueTRIAL-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="avX-Hh-ltf" firstAttribute="centerY" secondItem="luj-xQ-jVp" secondAttribute="centerY" id="wdp-e0-5Hh"/>
+                                        <constraint firstItem="avX-Hh-ltf" firstAttribute="leading" secondItem="luj-xQ-jVp" secondAttribute="leading" constant="15" id="zVX-z6-W28"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="avX-Hh-ltf" id="eYq-2l-RCX"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="ovj-gc-Fjl" id="qAa-hK-bUP"/>
+                                    <outlet property="delegate" destination="ovj-gc-Fjl" id="sef-61-RRk"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1vu-iF-PEZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sWC-bT-lIX" firstAttribute="width" secondItem="hOp-wZ-Bq0" secondAttribute="width" id="IMg-LI-o2Z"/>
+                            <constraint firstItem="rqu-hm-8eQ" firstAttribute="top" secondItem="sWC-bT-lIX" secondAttribute="bottom" id="KUT-eW-d4P"/>
+                            <constraint firstItem="sWC-bT-lIX" firstAttribute="centerX" secondItem="1vu-iF-PEZ" secondAttribute="centerX" id="LvG-tB-OPS"/>
+                            <constraint firstItem="rqu-hm-8eQ" firstAttribute="width" secondItem="hOp-wZ-Bq0" secondAttribute="width" id="Qjh-Gr-SSx"/>
+                            <constraint firstItem="rqu-hm-8eQ" firstAttribute="bottom" secondItem="1vu-iF-PEZ" secondAttribute="bottom" id="byg-qx-Ed7"/>
+                            <constraint firstItem="rqu-hm-8eQ" firstAttribute="centerX" secondItem="1vu-iF-PEZ" secondAttribute="centerX" id="ftB-f9-pZQ"/>
+                            <constraint firstItem="sWC-bT-lIX" firstAttribute="top" secondItem="hOp-wZ-Bq0" secondAttribute="top" id="xnl-gC-tiS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="subtopicsCollectionView" destination="rqu-hm-8eQ" id="tTz-hm-h9J"/>
+                        <outlet property="titleLabel" destination="QI3-CI-Hcr" id="JgR-qp-Cei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyi-bb-yIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.70229007633588" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon Back" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
